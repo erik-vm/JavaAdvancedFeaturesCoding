@@ -1,0 +1,25 @@
+Yes, I agree about Item class, you can also override the toString method there.
+I personally would not create a database class,
+instead I would simply create some kind of Collections (think which one suites this task best)
+of Items and pass these collections as parameters to Invoice.
+
+For the sake of this example, our Main class would act as "database" :)
+
+But, once again, you can certainly add some other parts, that would be a good practice.
+
+Me to Zans Klimovics (Direct Message) 10:45 AM
+LinkedHashMap?
+
+From Zans Klimovics to Me (Direct Message) 11:05 AM
+Any type of Map is like a table with two columns: key and value:
+
+KEY     |    VALUE
+--------------------
+key1    |   value1
+key2    |   value2
+key3    |   value3
+
+Since in this example and item itself carries information about its name,
+description and price (this is at least how I would implement it),
+thus I don't see what kind of value we would keep in such a map (if a key is Item).
+That's why I would use some other sort of Collection (the choice is between List and Set).
